@@ -8,21 +8,30 @@
 import Foundation
 import CTMediator
 
-public extension CTMediator {
+extension CTMediator {
     
-    @objc func Product_ViewControllerWithUserId(_ userId:String,callback:@escaping (String) -> Void) -> UIViewController? {
+    @objc public func Product_ViewControllerWithUserId(_ userId:String,callback:@escaping (String) -> Void) -> UIViewController? {
         let params = [
             "callBack":callback,
             "userId":userId,
             kCTMediatorParamsKeySwiftTargetModuleName:"Product_swift"
         ] as [String : Any]
-        let viewController = self.performTarget("Product", action: "viewController", params: params, shouldCacheTarget: false)
-        
-        if viewController != nil {
-            return viewController as? UIViewController
-        }else{
-            return nil
+
+        if let viewController = self.performTarget("Product", action: "viewController", params: params, shouldCacheTarget: false) as? UIViewController {
+            return viewController
         }
+        
+        return nil
+    }
     
+    @objc public func A_showSwift(callback:@escaping (String) -> Void) -> UIViewController? {
+        let params = [
+            "callback":callback,
+            kCTMediatorParamsKeySwiftTargetModuleName:"A_swift"
+            ] as [AnyHashable : Any]
+        if let viewController = self.performTarget("A", action: "Extension_ViewController", params: params, shouldCacheTarget: false) as? UIViewController {
+            return viewController
+        }
+        return nil
     }
 }

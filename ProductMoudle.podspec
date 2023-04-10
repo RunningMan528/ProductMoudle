@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ProductMoudle'
-  s.version          = '0.1.3'
+  s.version          = '0.1.4'
   s.summary          = '组件化之商城模块'
 
 # This description is used to generate tags and improve search results.

@@ -10,7 +10,7 @@ import UIKit
 
 @objc class Target_Product: NSObject {
     
-    @objc func Action_viewController(_ params: Dictionary<String, Any>) -> UIViewController {
+    @objc public func Action_viewController(_ params: Dictionary<String, Any>) -> UIViewController {
         if let callBack = params["callBack"] as? (String) -> Void {
             callBack("获取模块控制器成功。。。。")
         }
