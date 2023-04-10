@@ -16,9 +16,12 @@ public extension CTMediator {
             "userId":userId,
             kCTMediatorParamsKeySwiftTargetModuleName:"Product_swift"
         ] as [String : Any]
-        if let viewController = self.performTarget("Product", action: "viewController", params: params, shouldCacheTarget: false) as? UIViewController{
-            return viewController
+        let viewController = self.performTarget("Product", action: "viewController", params: params, shouldCacheTarget: false)
+        
+        if viewController != nil {
+            return viewController as? UIViewController
         }
+        
         return nil
     }
 }

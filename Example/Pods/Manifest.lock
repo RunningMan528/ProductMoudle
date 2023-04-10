@@ -5,7 +5,7 @@ PODS:
   - FBSnapshotTestCase/Core (2.1.4)
   - FBSnapshotTestCase/SwiftSupport (2.1.4):
     - FBSnapshotTestCase/Core
-  - ProductMoudle (0.1.1):
+  - ProductMoudle (0.1.2):
     - CTMediator
 
 DEPENDENCIES:
@@ -24,7 +24,7 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   CTMediator: 3f3578b525b3a46a7a2f92a99922ec40363f4269
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
-  ProductMoudle: 6c198c928ec34c6623e3decd6f0c65170e959dd4
+  ProductMoudle: 7fbf497347845ea86e8f860f5ed02b17a3811b02
 
 PODFILE CHECKSUM: 1323dc18f156fed0d0ce61455ad6ad33abc0be1c
 
