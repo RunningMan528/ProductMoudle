@@ -20,8 +20,9 @@ public extension CTMediator {
         
         if viewController != nil {
             return viewController as? UIViewController
+        }else{
+            return nil
         }
-        
-        return nil
+    
     }
 }
