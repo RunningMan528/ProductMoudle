@@ -1,5 +1,4 @@
 import XCTest
-import ProductMoudle
 
 class Tests: XCTestCase {
     

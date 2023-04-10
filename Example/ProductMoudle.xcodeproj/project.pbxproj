@@ -28,8 +28,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		024D2090D3E9256244AB83AC /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		209FDEC43E713D318E7CA0D5 /* ProductMoudle.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = ProductMoudle.podspec; path = ../ProductMoudle.podspec; sourceTree = "<group>"; };
+		024D2090D3E9256244AB83AC /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		209FDEC43E713D318E7CA0D5 /* ProductMoudle.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ProductMoudle.podspec; path = ../ProductMoudle.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		607FACD01AFB9204008FA782 /* ProductMoudle_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProductMoudle_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -41,7 +41,7 @@
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		79CCA12EC5150A0452825216 /* Pods-ProductMoudle_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProductMoudle_Example.debug.xcconfig"; path = "Target Support Files/Pods-ProductMoudle_Example/Pods-ProductMoudle_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		93E50A9E5467345C04BD47C5 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		93E50A9E5467345C04BD47C5 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		9C64674E32299CAAFBFCE184 /* Pods-ProductMoudle_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProductMoudle_Tests.release.xcconfig"; path = "Target Support Files/Pods-ProductMoudle_Tests/Pods-ProductMoudle_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		A2361A66E1D059A7FF11A6BF /* Pods_ProductMoudle_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ProductMoudle_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2F0B306124408DB1A7EFCA7 /* Pods_ProductMoudle_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ProductMoudle_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -156,7 +156,6 @@
 				E0C4E0C0C36C2212A09E17FF /* Pods-ProductMoudle_Tests.debug.xcconfig */,
 				9C64674E32299CAAFBFCE184 /* Pods-ProductMoudle_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -228,6 +227,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -292,10 +292,12 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-ProductMoudle_Example/Pods-ProductMoudle_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/CTMediator/CTMediator.framework",
 				"${BUILT_PRODUCTS_DIR}/ProductMoudle/ProductMoudle.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CTMediator.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ProductMoudle.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;

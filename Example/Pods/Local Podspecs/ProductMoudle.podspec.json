@@ -1,0 +1,27 @@
+{
+  "name": "ProductMoudle",
+  "version": "0.1.0",
+  "summary": "组件化之商城模块",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/peixu528@163.com/ProductMoudle",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "peixu528@163.com": "peixu@weli.cn"
+  },
+  "source": {
+    "git": "https://github.com/peixu528@163.com/ProductMoudle.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "source_files": "ProductMoudle/Classes/**/*",
+  "dependencies": {
+    "CTMediator": [
+
+    ]
+  }
+}

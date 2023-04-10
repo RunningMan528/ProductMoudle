@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'ProductMoudle'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of ProductMoudle.'
+  s.summary          = '组件化之商城模块'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -17,15 +17,13 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
-  s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
+  s.description      = '组件化之商城模块,组件化之商城模块,组件化之商城模块'
 
-  s.homepage         = 'https://github.com/peixu528@163.com/ProductMoudle'
+  s.homepage         = 'https://github.com/RunningMan528/ProductMoudle'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'peixu528@163.com' => 'peixu@weli.cn' }
-  s.source           = { :git => 'https://github.com/peixu528@163.com/ProductMoudle.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/RunningMan528/ProductMoudle.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '10.0'
@@ -38,5 +36,5 @@ TODO: Add long description of the pod here.
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.dependency 'CTMediator'
 end
